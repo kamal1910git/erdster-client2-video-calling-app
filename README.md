@@ -6,7 +6,7 @@ Install MongoDB (Dev)
 
 Repository to download
 
-git clone https://github.com/kamal1910git/erdster-video-calling-app.git
+git clone https://github.com/kamal1910git/erdster-client2-video-calling-app.git
 
 Dev 
 
