@@ -180,21 +180,21 @@ class HomePage extends React.Component {
         <SmartAlert show={this.state.popupWarn} warning title={this.state.popupWarnMessage} onConfirm={this.onPopWarnConfirm} />
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container-fluid">
-            <div id="navbar" className="navbar-collapse ">
-              <ul className="nav navbar-nav">
+            <div id="navbar" className="navbar-collapse ">              
+			        <ul className="nav navbar-nav">
                 <li className='cursor-indication'><a><span className="avatar"><img src="assets/img/user.png" /></span>&nbsp;&nbsp;<span className="proName"><strong>{this.state.username}</strong></span></a></li>                
-                <li className='cursor-indication'><a id="sidemenuBtn"><span><img src="assets/img/scv-img/menu.svg" width={28} /></span></a></li>
-                <li className='cursor-indication' style={{paddingTop: 8}}><a ><i className="fa fa-circle" />&nbsp;<strong style={{fontSize: 16}}><Online>Online</Online><Offline>Offline</Offline></strong></a></li>                
+                <li className='cursor-indication'><a id="sidemenuBtn"><i className="si si-menu"></i></a></li>
+                <li className='cursor-indication' ><a ><i className="fa fa-circle"></i>&nbsp;<strong style={{fontSize: 16}}><Online>Online</Online><Offline>Offline</Offline></strong></a></li>                
               </ul>
               <ul className="nav navbar-nav navbar-right">                
-                <li className='cursor-indication'><a onClick={this.handleLogoutClick.bind(this)}><img src="assets/img/scv-img/logout.svg" width={28} /></a></li>
-              </ul>
+                <li className='cursor-indication'><a onClick={this.handleLogoutClick.bind(this)}><i className="si si-logout"></i></a></li>
+              </ul>			  
             </div>
           </div>
         </nav>
         <div className="container-fluid main-panel">
           <div className="sidebar pull-left">
-            <ul className="ullist">
+          <ul className="ullist">
               <li className='cursor-indication'><a  className="active"><img src="assets/img/create-room-a.png" /><span>Create Room</span></a></li>
               <li className='cursor-indication'><a onClick={this.handleLeftNavClick.bind(this)}><img src="assets/img/meeting.png" /><span>Room List</span></a></li>
             </ul>
@@ -204,23 +204,22 @@ class HomePage extends React.Component {
               <div className="col-md-12">
                 <div className="panel panel-default card-wizard panel-bg">
                   <div className="panel-body">
+                    
                     <div className="row">
                       <div className="col-md-6">
                         <div className="col-md-6 col-sm-4 col-xs-4 ">
-                          <img src="assets/img/prc-logo.png" className="img-responsive" />
+                          <img src="assets/img/scv-img/logo.svg" className="img-responsive" />
                         </div>
                         <div className="clearfix" />
                       </div>
-                      <div className="col-md-6">
-                        <div className="col-md-8 col-sm-12 col-xs-12">                          
-                              <Home
+                      <div className="col-md-6 ">
+                        <div className="col-md-8 col-sm-12 col-xs-12 card-box">
+                           <Home
                               roomId={this.state.value}
                               handleChange={this.handleChange}
                               joinRoom={this.joinRoom}
                               setRoom={this.setRoom}
-                              rooms={this.props.rooms}></Home>						  
-                          <div className="col-md-6 col-sm-6 col-xs-6 pull-right">
-                            <img src="assets/img/erdster-logo.png" className="margin-top-50 pull-right img-responsive" />
+                              rooms={this.props.rooms}></Home>
                           </div>
                         </div>
                       </div>
@@ -230,11 +229,10 @@ class HomePage extends React.Component {
               </div>
             </div>
           </div>
-        </div>
         <footer>
-          <img src="assets/img/prc-logo.png" className="img-responsive pull-right footer-img" />
+          <img src="assets/img/erdster-logo.png" width="100px" className=" pull-left img-responsive" /> <img src="assets/img/scv-img/logo.svg" className="img-responsive pull-right footer-img" />
         </footer>
-      </div>      
+      </div>    
     );
   }
 }

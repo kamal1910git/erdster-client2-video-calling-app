@@ -71,69 +71,72 @@ export default class LoginContent extends React.Component {
       return (
       <div className="loginpage">        
         <div className="container-fluid">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="col-md-10 col-md-push-1 col-sm-8 col-sm-push-2 ">
-                  <div id="myCarousel" className=" carousel slide" data-ride="carousel">   
-                    <div className="carousel-inner panel panel-default ">
-                      <div className="item active">
-                        <img src="assets/img/slide-img.jpg" alt="Los Angeles" style={{width: '100%'}} />
-                        <div className="carousel-caption">
-                          <h4>One to One video interview platform</h4>
-                          <p>Gain more insight on candidates in far less time than a traditional phone interview. Candidates will answer your questions on their own time and you can review the completed video interviews at your convenience. As a result, you'll hear from more candidates, easily compare them, and never have to worry about scheduling early-round interviews again.</p>
-                        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="col-md-10 col-md-push-1 col-sm-8 col-sm-push-2 ">
+                <div id="myCarousel" className=" carousel slide" data-ride="carousel">   
+                  {/* Wrapper for slides */}
+                  <div className="carousel-inner panel panel-default ">
+                    <div className="item active">
+                      <img src="assets/img/slide-img.jpg" alt="Los Angeles" style={{width: '100%'}} />
+                      <div className="carousel-caption">
+                        <h4>One to One Clinical Appointment </h4>
+                        <p>At One Stop Doctors our healthcare experts can look after all your needs and most of the diagnostic test and treatments you may need can be carried out in the comfort and convenience of our One Stop Doctors Clinic. If you do need an inpatient procedure, our Consultants can undertake your treatment at a choice of high quality hospitals in the area, after which you can continue your follow-up and care at One Stop Doctors..</p>
                       </div>
-                      <div className="item">
-                        <img src="assets/img/slide-img.jpg" alt="Los Angeles" style={{width: '100%'}} />
-                        <div className="carousel-caption">
-                          <h4>One to One video interview platform</h4>
-                          <p>Gain more insight on candidates in far less time than a traditional phone interview. Candidates will answer your questions on their own time and you can review the completed video interviews at your convenience. As a result, you'll hear from more candidates, easily compare them, and never have to worry about scheduling early-round interviews again.</p>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <img src="assets/img/slide-img.jpg" alt="Los Angeles" style={{width: '100%'}} />
-                        <div className="carousel-caption">
-                          <h4>One to One video interview platform</h4>
-                          <p>Gain more insight on candidates in far less time than a traditional phone interview. Candidates will answer your questions on their own time and you can review the completed video interviews at your convenience. As a result, you'll hear from more candidates, easily compare them, and never have to worry about scheduling early-round interviews again.</p>
-                        </div>
-                      </div>	  
                     </div>
-                    <ol className="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to={0} className="active" />
-                      <li data-target="#myCarousel" data-slide-to={1} />
-                      <li data-target="#myCarousel" data-slide-to={2} />
-                    </ol>
+                    <div className="item">
+                      <img src="assets/img/slide-img-1.jpg" alt="Los Angeles" style={{width: '100%'}} />
+                      <div className="carousel-caption">
+                        <h4>One to One Clinical Appointment</h4>
+                        <p>At One Stop Doctors our healthcare experts can look after all your needs and most of the diagnostic test and treatments you may need can be carried out in the comfort and convenience of our One Stop Doctors Clinic. If you do need an inpatient procedure, our Consultants can undertake your treatment at a choice of high quality hospitals in the area, after which you can continue your follow-up and care at One Stop Doctors..</p>
+                      </div>
+                    </div>
+                    <div className="item">
+                      <img src="assets/img/slide-img-2.jpg" alt="Los Angeles" style={{width: '100%'}} />
+                      <div className="carousel-caption">
+                        <h4>One to One Clinical Appointment</h4>
+                        <p>At One Stop Doctors our healthcare experts can look after all your needs and most of the diagnostic test and treatments you may need can be carried out in the comfort and convenience of our One Stop Doctors Clinic. If you do need an inpatient procedure, our Consultants can undertake your treatment at a choice of high quality hospitals in the area, after which you can continue your follow-up and care at One Stop Doctors.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>        
-              </div> 
-              <div className="col-md-6" style={{marginTop: 70}}>
-                <div className="col-md-10 col-md-push-1 col-sm-6 col-sm-push-3 ">
-                  <img src="assets/img/prc-logo.png" className="img-responsive" style={{margin: '0 auto', width: 165}} />
-                  <form style={{width: '90%'}} onSubmit={this.handleRedirect}>
-                    <div className="input-group login-userinput">
-                      <span className="input-group-addon"><img src="assets/img/userIcon-24.png" /></span>
-                      <input id="txtUser" maxLength="100" required autoFocus type="text" className="form-control" name="username" placeholder="Username" value={this.state.username} onChange={this.handleUsernameChange} />
-                    </div>
-                    <div className="input-group">
-                      <span className="input-group-addon"><img src="assets/img/lockIcon-24.png" /></span>
-                      <input id="txtPassword" maxLength="25" required  type="password" className="form-control" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange} />
-                    </div>
-                    <div className="form-group">
-                      <input className="styled-checkbox" id="rememberMe" type="checkbox" defaultValue="value4" />
-                      <label htmlFor="rememberMe">Remember Me</label>
-                    </div>
-                    <button className="btn btn-primary btn-block login-button" type="submit">Login</button>                  
-                    <p className="errorInfo">{errorInfo}</p>                  
-                    <hr />
-                    <p className="text-center text-white">Yet to Register?  <a href="#">Register Now</a></p>
-                  </form>				
+                  {/* Indicators */}
+                  <ol className="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to={0} className="active" />
+                    <li data-target="#myCarousel" data-slide-to={1} />
+                    <li data-target="#myCarousel" data-slide-to={2} />
+                  </ol>
                 </div>
               </div>
-            </div>  
-          </div>
+            </div> 
+            <div className="col-md-6" style={{marginTop: 70}}>
+              <div className="col-md-10 col-md-push-1 col-sm-6 col-sm-push-3 card ">
+                <img src="assets/img/scv-img/logo-coloured.svg" className="img-responsive" style={{margin: '15px auto', width: 300}} />
+                <form style={{width: '90%'}} onSubmit={this.handleRedirect}>
+                  <div className="input-group login-userinput">
+                    <span className="input-group-addon"><img src="assets/img/userIcon-24.png" /></span>
+                    <input id="txtUser" maxLength="100" required autoFocus type="text" className="form-control" name="username" placeholder="Username" value={this.state.username} onChange={this.handleUsernameChange} />
+                  </div>
+                  <div className="input-group">
+                    <span className="input-group-addon"><img src="assets/img/lockIcon-24.png" /></span>
+                    <input id="txtPassword" maxLength="25" required  type="password" className="form-control" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange} />
+                  </div>
+                  <div className="form-group">
+                    <input className="styled-checkbox" id="rememberMe" type="checkbox" defaultValue="value4" />
+                    <label htmlFor="rememberMe">Remember Me</label>
+                  </div>
+                  <button className="btn btn-primary btn-block login-button" type="submit">Login</button>
+                  <p className="errorInfo">{errorInfo}</p>     
+                  <hr />
+                  <p className="text-center">Yet to Register?  <a href="#">Register Now</a></p>
+                  <p className="text-center powered">Powered by<a href="http://erdster.co.in/" target="_blank"> Erdster</a></p>           
+                </form>			
+              </div>
+            </div>
+          </div>  
         </div>
-    </div>
+      </div>
+      </div>
       )
     }   
 }

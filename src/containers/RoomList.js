@@ -104,12 +104,12 @@ export default class RoomList extends React.Component {
             <div id="navbar" className="navbar-collapse ">
               <ul className="nav navbar-nav">
                 <li className='cursor-indication'><a><span className="avatar"><img src="assets/img/user.png" /></span>&nbsp;&nbsp;<span className="proName"><strong>{this.state.username}</strong></span></a></li>                
-                <li className='cursor-indication'><a id="sidemenuBtn"><span><img src="assets/img/scv-img/menu.svg" width={28} /></span></a></li>
-                <li className='cursor-indication' style={{paddingTop: 8}}><a ><i className="fa fa-circle" />&nbsp;<strong style={{fontSize: 16}}><Online>Online</Online><Offline>Offline</Offline></strong></a></li>                
+                <li className='cursor-indication'><a id="sidemenuBtn"><i className="si si-menu"></i></a></li>
+                <li className='cursor-indication'><a ><i className="fa fa-circle"></i>&nbsp;<strong style={{fontSize: 16}}><Online>Online</Online><Offline>Offline</Offline></strong></a></li>                
               </ul>
               <ul className="nav navbar-nav navbar-right">                
-                <li className='cursor-indication'><a onClick={this.handleLogoutClick.bind(this)}><img src="assets/img/scv-img/logout.svg" width={28} /></a></li>
-              </ul>
+                <li className='cursor-indication'><a onClick={this.handleLogoutClick.bind(this)}><i className="si si-logout"></i></a></li>
+              </ul>	
             </div>
           </div>
         </nav>

@@ -1,11 +1,11 @@
 {
-  "name": "erdster-video-calling-app",
+  "name": "erdster-osd-video-calling-app",
   "version": "1.0.0",
-  "description": "erdster-video-calling-app - video and audio communication in a web browser with no plugins or extensions required.",
+  "description": "erdster-osd-video-calling-app - video and audio communication in a web browser with no plugins or extensions required.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamal1910git/kamalpocs/erdster-video-calling-app.git"
+    "url": "https://github.com/kamal1910git/kamalpocs/erdster-client2-video-calling-app.git"
   },
   "scripts": {
     "start": "node server.js",

@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300');
 @import url(font-awesome.css);
 @import url(../plugin/splitter/splitdiv.css);
+@import url(../css/fonts.css);
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
 /*    outline: 5px auto -webkit-focus-ring-color;*/
     outline: none;
@@ -11,8 +12,8 @@
 }
 .btn-primary.focus, .btn-primary:focus {
     color: #fff;
-    background-color: #f4146f;
-    border-color: #f4146f;
+    background-color: #57053E;
+    border-color: #57053E;
 }
 
 html, body {
@@ -28,33 +29,37 @@ a, p, button, input, select, textarea, label, table, .panel, .style-title {
 }
 
 body {
+    min-height: 100% !important;
     height: 100%;
-    background-image: url(../img/login-bg.jpg);
+    background: #ffeaff;
+    background: linear-gradient(#ffffff, #ffeaff);
+   /* background: linear-gradient(135deg, #ffffff 0%, #ffeaff 100%) !important;*/
     background-position: center center;
     background-size: cover;
 }
 
 .bodyOverride {
     height: 100%;
-    background-image: url(../img/login--image.jpg);
+    background-image: url(../img/login-bg1.jpg);
     background-position: center center;
     background-size: cover;
 }
 
 .bodyOverrideBack {
     height: 100%;
-    background-image: url(../img/login-bg.jpg);
+    background-image: url(../img/bg-create.jpg);
     background-position: center center;
     background-size: cover;
 }
 
 a {
-    color: #7c64a8;
+    color: #57053e;
     font-weight: bold;
+    text-decoration: none !important;
 }
 
 a:hover {
-    color: #7c64a8;
+    color: #45032F;
 }
 
 p {
@@ -65,7 +70,7 @@ p {
 
 thead {
     background: #e8e8e8;
-    color: #7c64a8;
+    color: #57053e;
     font-weight: 500;
 }
 
@@ -86,7 +91,7 @@ td small {
 }
 
 .text-primary {
-    color: #7c64a8;
+    color: #57053e;
 }
 
 .text-secondary {
@@ -118,11 +123,11 @@ td small {
 }
 
 .text-active {
-    color: #f4146f!important;
+    color: #57053E!important;
 }
 
 label {
-    color: #fff;
+    color: #666666;
 }
 
 a.customLink::before {
@@ -131,12 +136,13 @@ a.customLink::before {
 }
 
 .navbar-default {
-    background-color: #d4d4d6;
-    border-color: #d4d4d6;
+    background-color: #fff;
+    /*border-color: #45032F;*/
+    border-color: transparent;
 }
 
 footer {
-    background: #000;
+    background: #45032F;
     padding: 15px 25px;
     position: fixed;
     bottom: 0;
@@ -152,29 +158,32 @@ footer {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    border:1px solid #57053e;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #7c64a8;
+    color: #57053e;
 }
-
+.navbar-default .navbar-nav > li > a i{font-size: 24px; color: #750051;}
 div.loginpage {
     overflow: hidden;
 }
 
 .loginpage h4 {
-    color: #7c64a8;
+    color: #57053e;
     font-size: 16px;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 
 .loginpage {
-  height: 100% !important;    
+    height: 100%;
+    
   background-image: url(../img/login--image.jpg);
   background-position: center center;
   background-size: cover; 
-  padding-top: 25px;
+
+    padding-top: 25px;
 }
 
 .loginpage .carousel {
@@ -223,7 +232,7 @@ div.loginpage {
     width: 12px;
     height: 12px;
     margin: 0;
-    background-color: #7c64a8;
+    background-color: #57053e;
 }
 
 .loginpage .input-group {
@@ -253,7 +262,7 @@ div.loginpage {
 }
 
 .searchBox .btn {
-    color: #f4146f;
+    color: #57053E;
 }
 
 .styled-checkbox {
@@ -279,7 +288,7 @@ div.loginpage {
 }
 
 .styled-checkbox:hover + label:before {
-    background: #f4146f;
+    background: #57053E;
 }
 
 /*
@@ -290,7 +299,7 @@ div.loginpage {
 */
 
 .styled-checkbox:checked + label:before {
-    background: #f4146f;
+    background: #57053E;
 }
 
 .styled-checkbox:disabled + label {
@@ -319,17 +328,17 @@ div.loginpage {
 }
 
 .btn-primary {
-    background: #f4146f;
+    background: #57053E;
     border-radius: 25px;
     padding: 10px;
     font-weight: bold;
     font-size: 18px;
-    border-color: #f4146f;
+    border-color: #57053E;
 }
 
 .btn-primary:hover {
-    background: #c31059;
-    border-color: #c31059;
+    background: #45032F;
+    border-color: #45032F;
 }
 
 .main-panel {
@@ -389,9 +398,10 @@ div.content-area.in {
 }
 
 .ullist li a.active {
-    background: #7c64a8;
+    background: #57053e;
     color: #fff;
     text-decoration: none;
+    border-radius: 13px;
 }
 
 
@@ -732,6 +742,12 @@ ededed .card.row-space .header {
     border-radius: 5px;
 }
 
+.loginpage .card{background: rgba(255, 255, 255, 0.5); border-radius: 25px; width: 80%; margin: 0 auto;}
+.loginpage .card img{width: 24px;}
+.loginpage .card .powered{font-size: 13px;}
+.loginpage .card .powered img{width: 125px; }
+.card-box{background: rgba(255, 255, 255, 0.9); border-radius: 25px; width: 80%; margin: 0 auto;}
+
 .panel {
     background: #f5f4f4;
 }
@@ -765,8 +781,8 @@ ededed .card.row-space .header {
 
 .panel-default > .panel-heading.style-title, .style-title {
     color: #fff;
-    background-color: #7c64a8;
-    border-color: #7c64a8;
+    background-color: #57053e;
+    border-color: #57053e;
 }
 
 .style-title a {
@@ -876,8 +892,8 @@ div.connt-div{position: absolute; background: #8973b1; border-radius: 3px; width
 .connt-div .btn-primary{border-radius: 4px; font-size: 14px; padding: 6px 12px;}
 .card-wizard {min-height: calc(100% - 75px); overflow: auto;}
  .panel-bg {
-    background: url(../img/bg-create.png) no-repeat center center;
-    background-size: 100% 100%;
+    background: url(../img/bg-create.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 .color-white {
@@ -888,6 +904,10 @@ div.connt-div{position: absolute; background: #8973b1; border-radius: 3px; width
     margin-top: 50px;
 }
 .footer-img{margin: 0 auto; width: 100px;}
+a svg:hover,
+a svg:hover { 
+  fill: #111;
+}
 @media (min-width: 768px) {
     .navbar-nav > li > a {
         padding-top: 10px;
@@ -925,9 +945,8 @@ div.connt-div{position: absolute; background: #8973b1; border-radius: 3px; width
     #navbar .navbar-right li.dropdown{display: none;} 
 }
 
-
 .panel-bg {
-    background: url(../img/bg-create.png) no-repeat center center;
+    background: url(assets/img/bg-create.png) no-repeat center center;
     background-size: 100% 100%;
 }
 
@@ -951,3 +970,6 @@ div.connt-div{position: absolute; background: #8973b1; border-radius: 3px; width
     text-align: center !important;
 }
 
+a:focus, a:hover {
+    text-decoration: none !important;
+}
