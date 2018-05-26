@@ -47,7 +47,8 @@ body {
 
 .bodyOverrideBack {
     height: 100%;
-    background-image: url(../img/bg-create.jpg);
+    background: #ffeaff;
+    background: linear-gradient(#ffffff, #ffeaff);
     background-position: center center;
     background-size: cover;
 }
@@ -891,7 +892,7 @@ div.connt-div{position: absolute; background: #8973b1; border-radius: 3px; width
 .connt-div .ullist li{display: inline-block;}
 .connt-div .btn-primary{border-radius: 4px; font-size: 14px; padding: 6px 12px;}
 .card-wizard {min-height: calc(100% - 75px); overflow: auto;}
- .panel-bg {
+ .panel-bg-home {
     background: url(../img/bg-create.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -972,4 +973,36 @@ a svg:hover {
 
 a:focus, a:hover {
     text-decoration: none !important;
+}
+
+.ui-dialog {
+    border: 1px solid #fff !important;
+    background: #ffeaff !important;
+    background: linear-gradient(#ffffff, #ffeaff) !important;
+}
+
+.ui-dialog .ui-dialog-titlebar .title
+{
+    color:#fff !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    background-color: #57053E !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    z-index:99 !important;
+}
+
+.launcher
+{
+    background-color: #57053E !important;
+}
+
+.conversation-container .header
+{
+    background-color: #57053E !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {    
+    background-color: #57053E !important;
 }

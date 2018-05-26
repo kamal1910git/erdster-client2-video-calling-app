@@ -202,7 +202,7 @@ class HomePage extends React.Component {
           <div className="content-area">
             <div className="row">
               <div className="col-md-12">
-                <div className="panel panel-default card-wizard panel-bg">
+                <div className="panel panel-default card-wizard panel-bg-home">
                   <div className="panel-body">
                     
                     <div className="row">

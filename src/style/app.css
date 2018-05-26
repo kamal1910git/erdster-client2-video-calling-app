@@ -209,19 +209,11 @@
     border: darkgrey !important;
 }
 
-.ui-dialog .ui-dialog-buttonpane button
-{
-    background-color: #f4146f !important;
-    color: #fff !important;
-    font-weight: bold !important;
-    z-index:99 !important;
-}
-
-.emailText{
+.emailText {
     width: 100%;
     height: 2.5em;
-    border-width: 0.2em;
-    border-color: #ccc;
+    border-width: -0.8em;
+    border-color: #ffeaff;
     font-size: 1.2em;
 }
 
