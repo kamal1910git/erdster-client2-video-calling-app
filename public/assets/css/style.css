@@ -166,7 +166,7 @@ footer {
     color: #57053e;
 }
 .navbar-default .navbar-nav > li > a i{font-size: 24px; color: #750051;}
-div.loginpage {
+body.loginpage {
     overflow: hidden;
 }
 
@@ -924,10 +924,10 @@ a svg:hover {
 }
     .footer-img{margin: 0 auto; width: 75px;}
     html, body{overflow: hidden;}
-    div.loginpage{overflow-y: scroll;}
+    body.loginpage{overflow-y: scroll;}
 }
 @media (max-width:767px) {
-    div.loginpage {
+    body.loginpage {
         overflow: scroll;
     }
     #navbar .navbar-nav{ float: left;}
@@ -936,7 +936,7 @@ a svg:hover {
     #navbar .navbar-right{float: right !important;}
     #navbar .navbar-nav li span.proName{display: none;}
     body{overflow: hidden;}
-    div.loginpage{overflow-y: scroll;}
+    body.loginpage{overflow-y: scroll;}
     .loginpage .carousel-caption p{display: none;}
     
 }
