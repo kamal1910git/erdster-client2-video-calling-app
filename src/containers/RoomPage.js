@@ -89,11 +89,16 @@ class RoomPage extends React.Component {
             <div>
                 <MediaContainer media={media => this.media = media} socket={this.socket} getUserMedia={this.getUserMedia} />
                 <CommunicationContainer socket={this.socket} media={this.media} getUserMedia={this.getUserMedia} />
+                <br />
+                <div className="form-group">
+                  <textarea className="form-control" style={{marginBottom: 15}} rows={3} defaultValue={""} />
+                  <button className="btn btn-success ">Save</button> <button className="btn btn-default "><img src="../../assets/img/lumeon-logo-18.jpg" alt="Lumeon Logo" />Send to Lumeon</button>
+                </div>    
              </div>
           </div>
         </div>
       </div> 
-      </div>
+    </div>
     );
   }
 }

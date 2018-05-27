@@ -4,7 +4,7 @@ var ObjectId = require('mongodb').ObjectID;
 module.exports = function(app) {
 
 var mongo = require("mongoose");  
-var db = mongo.connect(process.env.MONGODB_SERVER, function(err, response){   
+var db = mongo.connect("mongodb://mongodbuser:welcome123@ds235180.mlab.com:35180/odcvideocalling", function(err, response){  
    if(err)
    { console.log('Failed to connect to ' + db); }  
    else
