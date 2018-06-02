@@ -137,11 +137,10 @@ export default class RoomList extends React.Component {
               </div>
             </div>
           </div>      
-        </div>
-        
+        </div>        
         </div>
         <footer>
-          <img src="assets/img/prc-logo.png" className="img-responsive pull-right footer-img" />
+          <img src="assets/img/erdster-logo.png" width="100px" className=" pull-left img-responsive" /> <img src="assets/img/scv-img/logo.svg" className="img-responsive pull-right footer-img" />
         </footer>
       </div>
     );

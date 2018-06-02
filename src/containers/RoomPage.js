@@ -86,13 +86,41 @@ class RoomPage extends React.Component {
       <div className="container-fluid main-panel">        
         <div className="content-area in">  
           <div className="row">
-            <div>
-                <MediaContainer media={media => this.media = media} socket={this.socket} getUserMedia={this.getUserMedia} />
-                <CommunicationContainer socket={this.socket} media={this.media} getUserMedia={this.getUserMedia} />                   
-             </div>
+          <div class="col-md-12">            
+          <div class="panel panel-default">      
+              <div class="panel-body">
+              <div class="col-md-12">            
+                <div class="panel panel-default">      
+                    <div class="panel-body">
+                      <div className="row">
+                          <div className="col-md-12">
+                            <div className="user-div">
+                              <MediaContainer media={media => this.media = media} socket={this.socket} getUserMedia={this.getUserMedia} />
+                              <CommunicationContainer socket={this.socket} media={this.media} getUserMedia={this.getUserMedia} />                   
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div className="row">
+                    <div className="col-md-12">
+                      <div className="user-div">                      
+                        <div>
+                          <div className="form-group">
+                            <textarea className="form-control" style={{marginBottom: 15}} rows={3} defaultValue={""} />
+                            <button className="btn btn-success ">Save</button> <button className="btn btn-default "><img src="../../assets/img/lumeon-logo-18.jpg" alt="Lumeon Logo" />Send to Lumeon</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div> 
+      </div>       
     </div>
     );
   }
