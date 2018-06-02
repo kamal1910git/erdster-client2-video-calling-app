@@ -987,7 +987,7 @@ a:focus, a:hover {
 }
 
 .ui-dialog .ui-dialog-buttonpane button {
-    background-color: #57053E !important;
+    background-color: #57053E;
     color: #fff !important;
     font-weight: bold !important;
     z-index:99 !important;
@@ -1005,4 +1005,19 @@ a:focus, a:hover {
 
 .ui-dialog .ui-dialog-titlebar {    
     background-color: #57053E !important;
+}
+
+
+.btn-green
+{
+    background-color: green !important;
+    border: lightgreen !important;
+    color: #fff !important;
+}
+
+.btn-brown
+{
+    background-color: #57053E !important;
+    border: #57053E !important;
+    color: #fff !important;
 }

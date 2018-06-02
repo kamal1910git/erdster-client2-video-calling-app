@@ -80,14 +80,37 @@ const Communication = props =>
                         buttons={
                             [{
                                 text: "Send Email",
+                                className:"btn-brown",
                                 onClick: () => props.handleSendEmailClick()
                             },{
                               text: "Close",
+                              className:"btn-grey",
                               onClick: () => props.handleCopyLinkClick()
                           }]
                         }>
                         <h4>Enter the interviewee email:</h4>
                         <p><input className="emailText" onChange={props.handleInput} type="text" autoFocus data-ref="toEmail" maxLength="150" required /></p>
+                    </Dialog>
+            </div>
+            }&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <a style={{ fontSize: '1.5em'}} onClick={props.handleLumeonCloseClick}>Send to Lumeon</a>
+          { props.isLumeonOpen &&
+           <div className="container">
+                    <Dialog title="Send to Lumeon"
+                        modal={true}
+                        onClose={props.handleLumeonCloseClick}
+                        buttons={
+                            [{
+                                text: "Send",
+                                className:"btn-brown",
+                                onClick: () => props.handleSendLumeonClick()
+                            },{
+                              text: "Save",
+                              className:"btn-green",
+                              onClick: () => props.handleSaveLumeonClick()
+                          }]
+                        }>
+                        <p><input className="lumeonText" onChange={props.handleInput} type="text" autoFocus data-ref="lumeonContent" maxLength="500" required /></p>
                     </Dialog>
             </div>
             }
@@ -113,6 +136,8 @@ Communication.propTypes = {
   handleInvitation: React.PropTypes.func.isRequired,
   handleCopyLinkClick: React.PropTypes.func.isRequired,
   handleSendEmailClick: React.PropTypes.func.isRequired,
+  handleSaveLumeonClick: React.PropTypes.func.isRequired,
+  handleSendLumeonClick: React.PropTypes.func.isRequired,
   toEmail: React.PropTypes.string.isRequired
 };
 

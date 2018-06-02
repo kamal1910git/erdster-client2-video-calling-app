@@ -11,7 +11,7 @@ import API_CONSTANT_MAP from '../components/apiMap'
 class CommunicationContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isOpen: false };
+    this.state = { isOpen: false, isLumeonOpen: false };
   }
   static propTypes = {
     socket: React.PropTypes.object.isRequired,
@@ -31,6 +31,7 @@ class CommunicationContainer extends React.Component {
     video: true,
     record: false,
     isOpen: false,
+    isLumeonOpen: false,
     toEmail: ''
   }
 
@@ -92,6 +93,14 @@ class CommunicationContainer extends React.Component {
     });
     
     this.props.setAudio(this.state.isOpen);       
+  }
+
+  toggleLumeonModal = () => {
+    this.setState({
+      isLumeonOpen: !this.state.isLumeonOpen
+    });
+    
+    this.props.setAudio(this.state.isLumeonOpen);       
   }
 
   toggleVideo = () => {
@@ -159,6 +168,26 @@ class CommunicationContainer extends React.Component {
     this.props.media.stopRecord('exit');
   }
 
+  handleSendLumeonClick = () =>
+  {
+    console.log('Lumeon send click');
+    this.setState({
+      isLumeonOpen: !this.state.isLumeonOpen
+    });
+    
+    this.props.setAudio(this.state.isLumeonOpen); 
+  }
+
+  handleSaveLumeonClick = () =>
+  {
+    console.log('Lumeon save click');
+    this.setState({
+      isLumeonOpen: !this.state.isLumeonOpen
+    });
+    
+    this.props.setAudio(this.state.isLumeonOpen); 
+  }  
+
   handleHangup = () => this.props.media.hangup()
   render(){
     return (      
@@ -175,7 +204,10 @@ class CommunicationContainer extends React.Component {
         handleInput={this.handleInput}
         handleInvitation={this.handleInvitation}
         handleCopyLinkClick={this.toggleModal} 
+        handleLumeonCloseClick={this.toggleLumeonModal} 
         handleSendEmailClick = {this.handleSendEmailClick}
+        handleSendLumeonClick = {this.handleSendLumeonClick}
+        handleSaveLumeonClick = {this.handleSaveLumeonClick}
         />        
     );
   }
