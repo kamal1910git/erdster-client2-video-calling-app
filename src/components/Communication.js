@@ -10,7 +10,7 @@ import ChatWidget from './ChatWidget'
 const Communication = props =>
   <div className="auth">
     <div className="media-controls">    
-      <a style={{ fontSize: '1em'}} onClick={props.handleCopyLinkClick}>Invite</a>
+      <a style={{ fontSize: '1em', paddingTop:'12px'}} onClick={props.handleCopyLinkClick}>Invite</a>
           { props.isOpen &&
            <div className="container">
                     <Dialog title="Share the link"
